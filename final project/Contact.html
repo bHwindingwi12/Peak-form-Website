@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | The Player's Blueprint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>The Player's Blueprint</h1>
+        <nav>
+            <ul>
+                <li><a href="first.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="top-banner">
+        <h2>Get In Touch</h2>
+    </section>
+
+    <main style="padding: 40px 20px; max-width: 600px; margin: auto;">
+        <h2>Connect with a Professional</h2>
+        <form id="pt-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">College Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="concern">Describe your pain/stiffness:</label>
+            <textarea id="concern" name="concern" rows="5" required></textarea>
+
+            <button type="button" onclick="validateAndSubmit()">Submit Inquiry</button>
+        </form>
+        <div id="response-message" style="margin-top: 20px; font-weight: bold;"></div>
+    </main>
+
+    <footer>
+        <p>Player's Blueprint.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
